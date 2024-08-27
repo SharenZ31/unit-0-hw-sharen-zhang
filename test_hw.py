@@ -42,6 +42,7 @@ def test_add_5():
 def test_a_string():
     the_string = ''.join(random.choices(string.ascii_uppercase +
                              string.digits, k=10))
+    print(the_string)
     smile_string = unit_0_hw.append_smiley_face(the_string)
     assert smile_string is not None
     assert smile_string[-3:] == " :)"
